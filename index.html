@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ben John Bernardo — business systems, client advisory, and an ERP reconciliation case study from a client-support internship.">
+  <title>Ben John Bernardo — Business Systems & Client Advisory</title>
+  <style>
+    :root { --paper:#f7f7f3; --white:#fff; --ink:#1b282b; --muted:#526167; --line:#d9dfdb; --green:#2d6257; --wash:#e9f0eb; --max:1080px; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+    a { color:inherit; text-underline-offset:4px; }
+    a:focus-visible { outline:3px solid var(--green); outline-offset:4px; }
+    .wrap { width:min(calc(100% - 48px), var(--max)); margin-inline:auto; }
+    .eyebrow { margin:0 0 23px; color:var(--green); font-size:.72rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+    .hero { background:url("hero-sunset.webp") center 52% / cover no-repeat; }
+    .hero-inner { min-height:100svh; display:flex; justify-content:flex-end; align-items:flex-start; padding-block:6vh 50px; }
+    .intro-card { width:min(100%,390px); padding:38px 40px 36px; background:rgba(255,255,255,.88); border:1px solid rgba(255,255,255,.8); border-radius:7px; box-shadow:0 16px 50px rgba(15,30,35,.12); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); }
+    h1, h2, h3, p { margin-top:0; }
+    h1 { margin-bottom:24px; font:400 clamp(2.25rem,3vw,2.75rem)/1.05 Georgia, "Times New Roman", serif; letter-spacing:-.05em; }
+    .lead { margin-bottom:24px; font-size:1rem; line-height:1.58; color:#304149; }
+    .focus { margin-bottom:27px; padding-top:20px; border-top:1px solid rgba(27,40,43,.2); font-size:.78rem; line-height:1.7; letter-spacing:.06em; text-transform:uppercase; color:#4c5d63; }
+    .text-link { display:inline-flex; align-items:center; gap:10px; color:var(--green); font-weight:750; text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:4px; }
+    .text-link:hover { gap:16px; }
+    .section { padding-block:82px; border-top:1px solid var(--line); }
+    .section-label { color:var(--green); font-size:.78rem; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+    h2 { font-size:clamp(2rem,4vw,3.15rem); line-height:1.15; letter-spacing:-.05em; font-weight:650; }
+    .project { background:var(--white); border:1px solid var(--line); border-radius:14px; padding:clamp(26px,5vw,64px); box-shadow:0 20px 54px rgba(27,40,43,.035); }
+    .project-top { display:flex; justify-content:space-between; gap:25px; border-bottom:1px solid var(--line); padding-bottom:30px; margin-bottom:40px; }
+    .project-top h2 { max-width:670px; margin-bottom:14px; }
+    .project-top p { max-width:650px; margin-bottom:0; color:var(--muted); }
+    .project-number { color:var(--green); font-size:2.4rem; font-weight:650; line-height:1; letter-spacing:-.06em; }
+    .case-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px 52px; }
+    .case-grid h3 { font-size:.76rem; letter-spacing:.13em; text-transform:uppercase; color:var(--green); margin-bottom:12px; }
+    .case-grid p { margin-bottom:0; color:#344449; }
+    .takeaway { margin-top:45px; padding:28px 32px; background:var(--wash); border-left:3px solid var(--green); border-radius:0 9px 9px 0; }
+    .takeaway strong { display:block; color:var(--green); font-size:.76rem; text-transform:uppercase; letter-spacing:.13em; margin-bottom:8px; }
+    .takeaway p { font-size:1.16rem; line-height:1.55; margin:0; }
+    footer { display:flex; justify-content:space-between; gap:25px; border-top:1px solid var(--line); padding-block:32px 48px; color:var(--muted); font-size:.85rem; }
+    footer p { margin:0; }
+    @media(max-width:720px) {
+      .wrap { width:min(calc(100% - 36px), var(--max)); }
+      .hero { background-position:50% center; }
+      .hero-inner { min-height:100svh; align-items:flex-end; justify-content:center; padding-block:30px; }
+      .intro-card { padding:27px 28px; }
+      .case-grid { grid-template-columns:1fr; gap:20px; }
+      .section { padding-block:62px; }
+      .project-top { gap:15px; }
+      .project-number { font-size:1.8rem; }
+      .case-grid { gap:30px; }
+      footer { flex-direction:column; gap:8px; }
+    }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print { body { background:#fff; } .hero { background:none; } .hero-inner { min-height:0; padding-block:20px; } .intro-card { box-shadow:none; border:0; padding:0; } .section { padding-block:38px; } .project { box-shadow:none; border-color:#aaa; } a { text-decoration:none; } }
+  </style>
+</head>
+<body>
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="wrap hero-inner">
+        <div class="intro-card">
+          <p class="eyebrow">Business &amp; technology</p>
+          <h1 id="page-title">Ben John Bernardo</h1>
+          <p class="lead">I’m interested in how technology and business processes work together and in helping people make sense of complicated systems.</p>
+          <p class="focus">Information systems · Business analysis · Client advisory</p>
+          <a class="text-link" href="#work">Featured work <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <p class="section-label">Featured work · Client advisory case study</p>
+        <article class="project" aria-labelledby="work-title">
+          <div class="project-top">
+            <div><h2 id="work-title">Supporting client on ERP reconciliation.</h2><p>This is an example of a real scenario I worked on during my internship supporting clients. This scenario saw me being able to diagnose the issue and guide the client to a solution.</p></div>
+            <span class="project-number" aria-hidden="true"></span>
+          </div>
+          <div class="case-grid">
+            <div><h3>Client issue</h3><p>The client was attempting to complete a balance swap within their ERP system however there was a discrepancy between the balances in their books and the balances in their bank and investment accounts. The client needed to understand this discrepancy to decide what to do.</p></div>
+            <div><h3>Investigation</h3><p>I took ownership of the request and began to investigate. By looking at the transactions in both the bank and books I was able to identify where the discrepancy occurred. I then used documentation, previous support cases, a colleague’s knowledge and my own testing to understand how to resolve the discrepancies.</p></div>
+            <div><h3>Presenting solutions.</h3><p>During a meeting with the client I presented the findings and went through both options that had been considered. We discussed how going back to the period of the original error would be the best option or considering a journal entry. We talked about how this would impact their audits. Ultimately the decision to resolve the issue would come down to the accounting team.</p></div>
+            <div><h3>Client decision</h3><p>The client decided to go back to the date of the error and correct it. I guided them through the process in ERP. I helped them to make an informed decision on a complicated system issue.</p></div>
+          </div>
+          <div class="takeaway"><strong>Consultative leadership</strong><p>Ownership doesn’t mean knowing everything, it means thoroughly researching, presenting the options and trade-offs and guiding the client to make an informed decision.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="footer-face">d[-_-]b</span>
+  </footer>
+  
+  <style>
+    footer {
+      text-align: center;
+      padding: 24px;
+    }
+  
+    .footer-face {
+      display: inline-block;
+      font-family: monospace;
+      font-size: 28px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+  
+    .footer-face:hover {
+      transform: scale(1.2) rotate(10deg);
+    }
+  </style>
+  
+  <script>
+    const face = document.querySelector(".footer-face");
+  
+    face.addEventListener("mouseenter", () => {
+      face.textContent = "d[^_^]b";
+    });
+  
+    face.addEventListener("mouseleave", () => {
+      face.textContent = "d[-_-]b";
+    });
+  </script>
+  </body>
+</html>
